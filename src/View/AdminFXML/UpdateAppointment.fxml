@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="528.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin.UpdateAppointmentController">
+   <children>
+      <HBox alignment="CENTER" layoutX="63.0" layoutY="443.0" prefHeight="60.0" prefWidth="445.0" spacing="8.0">
+         <children>
+            <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#cancelToMangment" prefHeight="51.0" prefWidth="188.0" style="-fx-background-color: red; -fx-background-radius: 0;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="UpdateAppointmentBtn" mnemonicParsing="false" onAction="#UpdateAppointment" prefHeight="51.0" prefWidth="248.0" styleClass="BtnUpdate" stylesheets="@../../css/StyleAdmin.css" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <GridPane alignment="CENTER" hgap="20.0" layoutX="62.0" layoutY="106.0" prefHeight="295.0" prefWidth="446.0" vgap="38.0">
+         <columnConstraints>
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="130.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="41.0" prefWidth="186.0" text="Date">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label prefHeight="33.0" prefWidth="195.0" text="Time" GridPane.rowIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label prefHeight="41.0" prefWidth="186.0" text="Day" GridPane.rowIndex="1">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dateTF" prefHeight="40.0" prefWidth="248.0" promptText="M / DD / YYYY" styleClass="TFAddNew" stylesheets="@../../css/StyleAdmin.css" GridPane.columnIndex="1" />
+            <ComboBox fx:id="Day" prefHeight="42.0" prefWidth="248.0" styleClass="TFAddNew" stylesheets="@../../css/StyleAdmin.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="TimeTF" prefHeight="39.0" prefWidth="248.0" styleClass="TFAddNew" stylesheets="@../../css/StyleAdmin.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" layoutX="167.0" layoutY="14.0" prefHeight="68.0" prefWidth="222.0" text="Update Appointment" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

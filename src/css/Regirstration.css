@@ -1,0 +1,33 @@
+
+.TextField{
+    -fx-background-color : white;
+    -fx-border-color:#383560;
+
+}
+
+.BtnA{
+    -fx-background-color:  #2952a3;
+    -fx-background-radius: 0;
+}
+.BtnA:hover{
+    -fx-background-color:  #1e3d76;
+}
+.ButtonR{
+    -fx-background-color: linear-gradient(to bottom right, #660000, #ff6666);
+    -fx-background-radius: 0;
+}
+
+.ButtonR:hover{
+    -fx-background-color: #a94141;
+
+}
+.Btno{
+    -fx-background-color: white;
+        -fx-background-radius: 1000;
+
+}
+
+
+.Btno:hover{
+    -fx-background-color: #d4d1d1;
+}

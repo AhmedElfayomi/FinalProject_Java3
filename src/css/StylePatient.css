@@ -1,0 +1,83 @@
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: #adc2eb
+;
+    -fx-stroke: transparent;
+    -fx-size:50;
+    -fx-alignment: CENTER ;
+    -fx-text-alignment: center;
+
+}
+.table-row-cell:filled:hover {
+    -fx-size:50;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+}
+.table-view:row-selection {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-fixed-cell-size: 50;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+
+}
+
+.table-view .table-column{
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER
+
+}
+
+.nav{
+    -fx-background-color :  #1c273c;
+}
+.navItem{
+    -fx-background-color : #1c273c;
+    -fx-text-fill:#489ef4;
+    -fx-background-radius : 0;
+    -fx-font-size: 16px;
+    -fx-font-family: Roboto;
+}
+.navItem:hover{
+    -fx-background-color :  #383560;
+    -fx-text-fill: #726bfa;
+    -fx-font-weight : bold ;
+
+}
+
+.navItemActive{
+    -fx-background-radius : 0;
+    -fx-background-color :  #489ef4;
+    -fx-text-fill: white;
+    -fx-font-weight : bold ;
+    -fx-font-size: 16px;
+    -fx-font-family: Roboto;
+}
+
+.showBtn{
+    -fx-background-radius : 0;
+    -fx-background-color :  #363f70;
+    -fx-text-fill: white;
+    -fx-font-weight : bold ;
+    -fx-font-size: 13px;
+}
+.showBtn:hover{
+    -fx-background-color : #6358f5;
+    -fx-text-fill: white;
+    -fx-cursor:hand;
+}
+
+.BookBtn{
+    -fx-background-radius : 0;
+    -fx-background-color :  #96183c;
+    -fx-text-fill: white;
+    -fx-font-weight : bold ;
+    -fx-font-size: 16px;
+}
+.BookBtn:hover{
+    -fx-background-color : #380515;
+    -fx-text-fill: white;
+    -fx-cursor:hand;
+}

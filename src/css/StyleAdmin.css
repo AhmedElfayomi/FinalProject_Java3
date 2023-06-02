@@ -1,0 +1,136 @@
+/* 
+    Created on : 25 May 2023, 10:52:55 AM
+    Author     : Ahmed
+*/
+.BtnAdd{
+    -fx-background-color :   #6e66ff;
+    -fx-text-fill: white;
+    -fx-background-radius:0;
+    -fx-cursor: hand;
+
+}
+
+.BtnAdd:hover{
+    -fx-background-color : #554dff;
+    -fx-text-fill: white;
+}
+
+.BtnDelete{
+    -fx-background-color:  #de4e00;
+    -fx-background-radius : 0;
+    -fx-cursor: hand;
+
+}
+.BtnDelete:hover{
+    -fx-background-color : #cf6227;
+    -fx-text-fill: white;
+}
+.BtnUpdate{
+    -fx-background-radius : 0;
+    -fx-background-color :  #0098fa;
+    -fx-cursor: hand;
+
+}
+.BtnUpdate:hover{
+    -fx-background-color : #7ccafc;
+
+}
+.BtnSearch{
+    -fx-background-radius : 0;
+    -fx-cursor: hand;
+    -fx-background-color: #1c273c;
+    -fx-text-fill: white;
+}
+.BtnSearch:hover{
+    -fx-background-color: #283957;
+    -fx-text-fill: white;
+}
+.searchTF{
+    -fx-background-radius : 0;
+    -fx-border-color :  #1c273c;
+
+}
+.BtnShow{
+    -fx-background-color :  #363f70;
+    -fx-text-fill: white;
+    -fx-background-radius : 0;
+    -fx-cursor: hand;
+}
+.BtnShow:hover{
+    -fx-background-color : #6358f5;
+    -fx-text-fill: white;
+
+}
+
+.TFAddNew{
+    -fx-background-color : white;
+    -fx-border-color:#383560;
+
+}
+
+.TFAddUser{
+    -fx-background-radius : 0;
+    -fx-background-color : white;
+    -fx-border-color: #1c273c;
+}
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: derive;
+    -fx-stroke: transparent;
+    -fx-size:50;
+    -fx-alignment: CENTER ;
+    -fx-text-alignment: center;
+
+}
+.table-row-cell:filled:hover {
+
+    -fx-size:50;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+
+
+}
+.table-view:row-selection {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-fixed-cell-size: 50;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+
+}
+
+.table-view .table-column{
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER
+
+}
+/********************Sidbar**********************/
+.sidePar{
+    -fx-background-color :  #1c273c;
+}
+.sideParItem{
+    -fx-background-color : #1c273c;
+    -fx-text-fill:#489ef4;
+    -fx-background-radius : 0;
+    -fx-font-size: 16px;
+    -fx-font-family: Roboto;
+}
+.sideParItem:hover{
+    -fx-background-color :  #383560;
+    -fx-text-fill: #726bfa;
+    -fx-font-weight : bold ;
+
+}
+
+.sideParItemActive{
+    -fx-background-radius : 0;
+    -fx-background-color :  #489ef4;
+    -fx-text-fill: white;
+    -fx-font-weight : bold ;
+    -fx-font-size: 16px;
+    -fx-font-family: Roboto;
+}
+
+/******************************************/

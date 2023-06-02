@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Patient.PatientManagmentController">
+   <center>
+      <AnchorPane prefHeight="620.0" prefWidth="738.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="TapleViewAppointments" layoutX="212.0" layoutY="118.0" prefHeight="262.0" prefWidth="600.0" stylesheets="@../../css/StylePatient.css" AnchorPane.bottomAnchor="154.0" AnchorPane.topAnchor="118.0">
+              <columns>
+                <TableColumn fx:id="idCol" prefWidth="52.0" text="Id" />
+                <TableColumn fx:id="DateCol" prefWidth="151.99998474121094" text="Date" />
+                  <TableColumn fx:id="DayCol" prefWidth="154.4000244140625" text="Day" />
+                  <TableColumn fx:id="TimeCol" minWidth="0.0" prefWidth="108.79998779296875" text="Time" />
+                  <TableColumn fx:id="statusCol" prefWidth="128.0" text="Status" />
+              </columns>
+            </TableView>
+            <Button fx:id="bookBtn" layoutX="362.0" layoutY="410.0" mnemonicParsing="false" onAction="#BookAppointment" prefHeight="47.0" prefWidth="300.0" styleClass="BookBtn" stylesheets="@../../css/StylePatient.css" text="Book" />
+            <Button fx:id="showBtn" layoutX="212.0" layoutY="81.0" mnemonicParsing="false" onAction="#showAppointment" prefHeight="32.0" prefWidth="110.0" styleClass="showBtn" stylesheets="@../../css/StylePatient.css" text="Show" AnchorPane.topAnchor="81.0" />
+            <HBox layoutX="35.0" layoutY="14.0" prefHeight="44.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="44.0" prefWidth="98.0" text="User name : ">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelUsername" prefHeight="44.0" prefWidth="134.0" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="99.0" prefWidth="1024.0" styleClass="nav" stylesheets="@../../css/StylePatient.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="30.0" layoutY="25.0" prefHeight="42.0" prefWidth="250.0" text="PATIENT DASHBOARD" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="744.0">
+               <font>
+                  <Font name="Candara" size="25.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.3712121428865375" endY="1.0" startX="0.367424257776954">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.20000000298023224" green="0.14666666090488434" blue="0.1697777807712555" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <HBox layoutX="538.0" prefHeight="97.0" prefWidth="471.0" AnchorPane.bottomAnchor="2.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="BtnAppointmentFree" mnemonicParsing="false" onAction="#showAppointmentFree" prefHeight="99.0" prefWidth="124.0" styleClass="navItemActive" stylesheets="@../../css/StylePatient.css" text="Appointments (Free)" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BtnBookingW" mnemonicParsing="false" onAction="#showBookingW" prefHeight="99.0" prefWidth="124.0" styleClass="navItem" stylesheets="@../../css/StylePatient.css" text="My Booking (waiting)" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BtnBookingF" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#showBookingF" prefHeight="99.0" prefWidth="124.0" styleClass="navItem" stylesheets="@../../css/StylePatient.css" text="My Booking (Finished)" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logouBtn" mnemonicParsing="false" onAction="#logout" prefHeight="99.0" prefWidth="86.0" styleClass="navItem" stylesheets="@../../css/StylePatient.css" text="Logout">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
